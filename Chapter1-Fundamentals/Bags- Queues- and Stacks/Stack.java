@@ -75,6 +75,11 @@ public class Stack<Item> implements Iterable<Item> {
         return item;
     }
     
+    public Item peek() {
+        if (isEmpty()) throw new RuntimeException("Stack underflow!");
+        else return first.item;
+    }
+    
     public Iterator<Item> iterator() {
        return new LinkedListIterator(); 
     }
@@ -88,5 +93,24 @@ public class Stack<Item> implements Iterable<Item> {
             return item;
         }
         public void remove() {}
+    }
+    
+    public static Stack<String> copy(Stack<String> srcStack) {
+        Stack<String> dstStack  = new Stack<String>();
+        Stack<String> tempStack = new Stack<String>();
+        
+        Iterator<String> itr1 = srcStack.iterator();
+        while(itr1.hasNext()) {
+            tempStack.push(itr1.next());
+        }
+        itr1 = null;
+        
+        Iterator<String> itr2 = tempStack.iterator();
+        while(itr2.hasNext()) {
+            dstStack.push(itr2.next());
+        }
+        itr2 = null;
+        tempStack = null;
+        return dstStack;
     }
 }
