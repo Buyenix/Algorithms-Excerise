@@ -4,3 +4,5 @@ Exercise Mapping:
     1.4.11 --> StaticsSETofInts.java
     1.4.12 --> ShowSameElements.java
     1.4.15 --> Solution is similar to FourSum.java
+    1.4.16 --> Solution: sort the array and then foreach the array to compare the two linked elements' difference to find the smallest one.
+    1.4.17 --> Solution: foreach the array to find max/min values to get the max difference.
