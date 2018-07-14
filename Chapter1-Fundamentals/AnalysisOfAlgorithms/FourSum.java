@@ -1,4 +1,5 @@
 import java.util.Arrays;
+
 public class FourSum {
     private static int get4SumCount(int[] a, int target) {
         Arrays.sort(a);
