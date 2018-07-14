@@ -29,6 +29,15 @@ public class Steque<Item> {
         N++;
     }
     
+    public Item dequeue() {
+        if (isEmpty()) throw new RuntimeException("Steque underflow!");
+        Item item = first.item;
+        first = first.next;
+        N--;
+        if (isEmpty()) first = last = null;
+        return item;
+    }
+    
     public void push(Item item) {
         Node node = new Node();
         node.item = item;
@@ -50,6 +59,22 @@ public class Steque<Item> {
         //StdOut.printf("Size: %d\n", N);
         N--;
         return item;
+    }
+    
+    public void catenation(Steque<Item> steque) {
+        Steque<Item> newSteque = new Steque<Item>();
+        int num = size();
+        for (int i = 0; i < num; i++) {
+            newSteque.enqueue(dequeue());
+        }
+        
+        num = steque.size();
+        for (int j = 0; j < num; j++) {
+            newSteque.enqueue(steque.dequeue());
+        }
+        first = newSteque.first;
+        last = newSteque.last;
+        N = newSteque.N;
     }
     
     public static void main(String[] args) {
