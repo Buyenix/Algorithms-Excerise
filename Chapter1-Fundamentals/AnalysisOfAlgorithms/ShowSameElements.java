@@ -1,4 +1,5 @@
 import java.util.Arrays;
+
 public class ShowSameElements {
     private static void showSameElements(int[] a1, int[] a2) {
         for(int i=0, j=0; (i<a1.length && j<a2.length);) {
