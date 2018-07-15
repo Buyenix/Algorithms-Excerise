@@ -9,4 +9,4 @@ Exercise Mapping:
     1.4.18 --> FindOneLocalMinValueForArray.java. In this exercise, the concept "local min value" is very intersting and important.
     1.4.19 --> FindOneLocalMinValueForMatrix.java && FindOneLocalMinValueForMatrix2.java
     1.4.20 --> Solution: Use binary search to find the maximum (in ~ 1 lg N compares); then use binary search to search in each piece (in ~ 1 lg N compares per piece).
-    
+    1.4.21 --> Solution(may not be right): When copy the intput array, we need to sort the array + refactor it by removing the multiple same elements so that contains() can use binary search with time complexity ~lg(R).
