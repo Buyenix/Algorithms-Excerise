@@ -14,3 +14,6 @@ Exercise Mapping:
     1.4.23  --> FractionBinarySearch.java
     1.4.24  --> Strategy 1: use binary search to get F.
                 Strategy 2: when N is much larger than F, we can first start from 0 to keep doubling the floor to stop at the floor where the egg is broken. Then use binary search to find the F.
+                
+   1.4.25  --> Solution to Part 1: To achieve 2 * sqrt(N), drop eggs at floors sqrt(N), 2 * sqrt(N), 3 * sqrt(N), ..., sqrt(N) * sqrt(N). (For simplicity, we assume here that sqrt(N) is an integer.) Let assume that the egg broke at level k * sqrt(N). With the second egg you should then perform a linear search in the interval (k-1) * sqrt(N) to k * sqrt(N). In total you will be able to find the floor F in at most 2 * sqrt(N) trials.
+               Hint for Part 2: 1 + 2 + 3 + ... k ~ 1/2 k^2.
