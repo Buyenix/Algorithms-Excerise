@@ -12,3 +12,5 @@ Exercise Mapping:
     1.4.21 --> Solution(may not be right): When copy the intput array, we need to sort the array + refactor it by removing the multiple same elements so that contains() can use binary search with time complexity ~lg(R).
     1.4.22  --> FibonacciSearch.java
     1.4.23  --> FractionBinarySearch.java
+    1.4.24  --> Strategy 1: use binary search to get F.
+                Strategy 2: when N is much larger than F, we can first start from 0 to keep doubling the floor to stop at the floor where the egg is broken. Then use binary search to find the F.
