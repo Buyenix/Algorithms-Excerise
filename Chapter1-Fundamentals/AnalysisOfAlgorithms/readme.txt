@@ -19,3 +19,4 @@ Exercise Mapping:
                Hint for Part 2: 1 + 2 + 3 + ... k ~ 1/2 k^2.
   1.4.26  --> Use algebra to show that (a, a3), (b, b3), and (c, c3) are collinear if and only if a + b + c = 0.
   1.4.27  --> QueueWithTwoStacks.java
+  1.4.28  --> To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return. (This solution is admittedly very inefficient.)
