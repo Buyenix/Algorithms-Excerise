@@ -22,14 +22,17 @@ public class FibonacciSearch {
         
         int lo = 0; 
         int hi = newArr.length - 1;
+        // Similar with binary search which is lo + (hi-lo)/2 + (hi-lo)/2 division, 
+        // Fibonacci search is lo + Fb[k-2] + Fb[k-1]. So the initial [mid] should
+        // be Fb[k-2] + lo or Fb[k-1] + lo.
         while(lo <= hi) {
-            int mid = lo + FbArr[k-1] - 1;
+            int mid = lo + FbArr[k-2] - 1;
             if (newArr[mid] > key) {
                 hi = mid - 1;
-                k -= 1;
+                k -= 2;
             } else if (newArr[mid] < key) {
                 lo = mid + 1;
-                k -= 2;
+                k -= 1;
             } else {
                 if (mid < arr.length) return mid;
                 else return arr.length - 1;
