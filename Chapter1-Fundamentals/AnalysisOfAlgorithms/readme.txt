@@ -20,3 +20,4 @@ Exercise Mapping:
   1.4.26  --> Use algebra to show that (a, a3), (b, b3), and (c, c3) are collinear if and only if a + b + c = 0.
   1.4.27  --> QueueWithTwoStacks.java
   1.4.28  --> To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return. (This solution is admittedly very inefficient.)
+  1.4.29  --> Solution is similar to 1.4.27. Only one more operation is when call pop(), if stack1 is empty, we need to move all stack2's elements to stack1.
