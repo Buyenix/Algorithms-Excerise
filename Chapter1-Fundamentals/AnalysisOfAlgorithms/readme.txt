@@ -17,8 +17,16 @@ Exercise Mapping:
                 
    1.4.25  --> Solution to Part 1: To achieve 2 * sqrt(N), drop eggs at floors sqrt(N), 2 * sqrt(N), 3 * sqrt(N), ..., sqrt(N) * sqrt(N). (For simplicity, we assume here that sqrt(N) is an integer.) Let assume that the egg broke at level k * sqrt(N). With the second egg you should then perform a linear search in the interval (k-1) * sqrt(N) to k * sqrt(N). In total you will be able to find the floor F in at most 2 * sqrt(N) trials.
                Hint for Part 2: 1 + 2 + 3 + ... k ~ 1/2 k^2.
+               
   1.4.26  --> Use algebra to show that (a, a3), (b, b3), and (c, c3) are collinear if and only if a + b + c = 0.
+  
   1.4.27  --> QueueWithTwoStacks.java
+  
   1.4.28  --> To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return. (This solution is admittedly very inefficient.)
+  
   1.4.29  --> Solution is similar to 1.4.27. Only one more operation is when call pop(), if stack1 is empty, we need to move all stack2's elements to stack1.
+  
   1.4.31/1.3.49 --> Reference: https://stackoverflow.com/questions/5538192/how-to-implement-a-queue-with-three-stacks
+  
+  1.4.34  --> First part: Use binary search to find. .ie. [0 - N], compare N/2 and N/2+1 to see which is holder. Then choose the corresponding half interval to repeat again unitl find the number.
+          --> Second part: Reference: (https://stackoverflow.com/questions/25558951/hot-and-cold-binary-search-game) which R2B2's answer can reach ~lgN time complexity.
