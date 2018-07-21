@@ -17,3 +17,5 @@ Exercise Mapping:
                 
    1.4.25  --> Solution to Part 1: To achieve 2 * sqrt(N), drop eggs at floors sqrt(N), 2 * sqrt(N), 3 * sqrt(N), ..., sqrt(N) * sqrt(N). (For simplicity, we assume here that sqrt(N) is an integer.) Let assume that the egg broke at level k * sqrt(N). With the second egg you should then perform a linear search in the interval (k-1) * sqrt(N) to k * sqrt(N). In total you will be able to find the floor F in at most 2 * sqrt(N) trials.
                Hint for Part 2: 1 + 2 + 3 + ... k ~ 1/2 k^2.
+  1.4.26  --> Use algebra to show that (a, a3), (b, b3), and (c, c3) are collinear if and only if a + b + c = 0.
+  1.4.27  --> QueueWithTwoStacks.java
