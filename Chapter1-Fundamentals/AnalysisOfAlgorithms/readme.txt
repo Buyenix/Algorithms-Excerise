@@ -21,3 +21,4 @@ Exercise Mapping:
   1.4.27  --> QueueWithTwoStacks.java
   1.4.28  --> To delete an item, get all of the elements on the queue one at a time, and put them at the end, except for the last one which you should delete and return. (This solution is admittedly very inefficient.)
   1.4.29  --> Solution is similar to 1.4.27. Only one more operation is when call pop(), if stack1 is empty, we need to move all stack2's elements to stack1.
+  1.4.31/1.3.49 --> Reference: https://stackoverflow.com/questions/5538192/how-to-implement-a-queue-with-three-stacks
