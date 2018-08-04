@@ -28,5 +28,5 @@ Exercise Mapping:
   
   1.4.31/1.3.49 --> Reference: https://stackoverflow.com/questions/5538192/how-to-implement-a-queue-with-three-stacks
   
-  1.4.34  --> First part: Use binary search to find. .ie. [0 - N], compare N/2 and N/2+1 to see which is holder. Then choose the corresponding half interval to repeat again unitl find the number.
+  1.4.34  --> First part: Use binary search to find. .ie. [0 - N], compare N/2 and N/2+1 to see which is colder. Then choose the corresponding half interval to repeat again unitl find the number.
           --> Second part: Reference: (https://stackoverflow.com/questions/25558951/hot-and-cold-binary-search-game) which R2B2's answer can reach ~lgN time complexity.
