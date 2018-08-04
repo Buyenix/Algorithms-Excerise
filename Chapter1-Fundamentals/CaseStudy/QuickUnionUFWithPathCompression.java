@@ -50,7 +50,7 @@ public class QuickUnionUFWithPathCompression {
     }
     
     public static void main(String[] args) {
-        QuickUnionUF uf = new QuickUnionUF(10);
+        QuickUnionUFWithPathCompression uf = new QuickUnionUFWithPathCompression(10);
         In in = new In("1_5_1.txt");
         while (!in.isEmpty()) {
             int p = in.readInt();
