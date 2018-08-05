@@ -6,3 +6,5 @@
 1.5.12: QuickUnionUFWithPathCompression.java
 1.5.13: Solution is same with 1.5.12
 1.5.14: WeightedQuickUnionByHeightUF.java
+1.5.15: Pending
+1.5.16: Skip
