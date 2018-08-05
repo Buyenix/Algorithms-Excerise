@@ -11,3 +11,4 @@
 1.5.17: ErdosRenyi.java and UF.java
 1.5.18: Connection.java, RandomBag.java and RandomGrid.java. Not sure the code is correct per to request.
 1.5.19: Pending
+1.5.20: DynamicWeightedQuickUnionUF.java
