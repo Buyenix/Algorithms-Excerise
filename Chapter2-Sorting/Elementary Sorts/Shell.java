@@ -1,5 +1,3 @@
-//import java.util.Comparator;
-
 public class Shell {
     public static void sort(Comparable[] a) {
         int N = a.length;
