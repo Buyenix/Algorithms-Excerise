@@ -4,3 +4,6 @@
 2.1.28: VisualTraceShell.java, VisualTraceInsertion.java and VisualTraceSelection.java
 2.1.21: Data.java
 2.1.22: SortTransaction.java
+2.1.24: InsertionSortWithSentinel.java
+2.1.25: InsertionSortwithoutExch.java
+2.1.26: CompareIntWithIntegerForInsertion.java, InsertionSortWithInt.java. Int is much faster than Integer!
