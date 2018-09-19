@@ -1,8 +1,10 @@
+//import java.util.Comparator;
+
 public class Shell {
     public static void sort(Comparable[] a) {
         int N = a.length;
         int h = 1;
-        StdOut.printf("size: %d\n", N);
+        //StdOut.printf("size: %d\n", N);
         while(h < N/3) h = 3*h + 1;
         while (h >= 1) {
             int count = 0;
@@ -12,7 +14,7 @@ public class Shell {
                     count++;
                 }
             }
-            StdOut.printf("  h:%5d, %.4f\n", h, (double)count/N);
+            //StdOut.printf("  h:%5d, %.4f\n", h, (double)count/N);
             h /= 3;
         }
     }
