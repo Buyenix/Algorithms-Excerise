@@ -10,4 +10,6 @@
 2.1.27: ShellsortIsSubquadratic.java Selection.java
 2.1.28: Insertion sort is faster than selection sort.
 2.1.29: ShellsortIncrements.java, ShellWithNewSequence.java
+2.1.30: pending
+2.1.31: pending
 2.1.32: PlotRunningTimes.java, sortCompare.java, Insertion.java
