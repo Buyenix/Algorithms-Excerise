@@ -6,3 +6,4 @@
 2.2.14:  MergingSortedQueuesWithDequeue.java, MergingSortedQueuesWithoutDequeue.java
 2.2.15： BottomupQueueMergesort.java
 2.2.16:  NaturalMergesort.java
+2.2.17:  Similar to 2.2.16. Not implemented yet!
