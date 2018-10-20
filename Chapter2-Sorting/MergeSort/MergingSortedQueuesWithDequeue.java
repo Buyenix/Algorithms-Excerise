@@ -1,5 +1,4 @@
 import java.util.Iterator;
-
 public class MergingSortedQueuesWithDequeue {
     private static boolean isSorted(Queue<Comparable> q) {
         Iterator<Comparable> itr = q.iterator();
