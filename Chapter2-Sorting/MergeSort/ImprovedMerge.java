@@ -15,7 +15,10 @@ public class ImprovedMerge {
         //if (isSorted(a, lo, hi)) return;
         
         int len = hi - lo + 1;
-        if (len <= 15) InsertionSort(dst, lo, hi);
+        if (len <= 15) {
+            InsertionSort(dst, lo, hi);
+            return;
+        }
         
         int mid = lo + (hi - lo)/2;
         sort(dst, src, lo, mid);
