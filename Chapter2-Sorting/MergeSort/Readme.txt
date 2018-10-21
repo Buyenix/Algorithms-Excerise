@@ -10,3 +10,4 @@
 2.2.19:  Inversions.java
 2.2.20:  IndirectSort.java
 2.2.21:  Triplicates.java
+2.2.22:  The orger of growth is Nlog3(2N), but not sure yet!
