@@ -9,3 +9,4 @@
 2.2.17:  Similar to 2.2.16. Not implemented yet!
 2.2.19:  Inversions.java
 2.2.20:  IndirectSort.java
+2.2.21:  Triplicates.java
