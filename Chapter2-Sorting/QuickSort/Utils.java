@@ -16,4 +16,11 @@ public class Utils {
         }
         StdOut.println();
     }
+    
+    public static Integer[] genData(int N) {
+        Integer[] a = new Integer[N];
+        for (int i = 0; i < N; i++)
+            a[i] = StdRandom.uniform(0, 20);
+        return a;
+    }
 }
