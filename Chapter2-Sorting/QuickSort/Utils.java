@@ -42,9 +42,10 @@ public class Utils {
     public static double time(String alg, Comparable[] a) {
         Utils util = new Utils();
         Stopwatch timer = util.new Stopwatch();
-        if (alg.equals("JavaSystemSort")) JavaSystemSort.sort(a);
-        else if (alg.equals("QuickSort")) QuickSort.sort(a);
+        if (alg.equals("JavaSystemSort"))           JavaSystemSort.sort(a);
+        else if (alg.equals("QuickSort"))           QuickSort.sort(a);
         else if (alg.equals("QuickBentleyMcIlroy")) QuickBentleyMcIlroy.sort(a);
+        else if (alg.equals("SampleSort"))          SampleSort.sort(a, 7);
         else {throw new RuntimeException("No matched sort method!");}
         return timer.elapsedTime();
     }
