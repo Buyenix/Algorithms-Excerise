@@ -1,2 +1,9 @@
 2.4.3： OrderedArrayMaxPQ.java, UnorderedArrayMaxPQ.java, OrderedLinkedListMaxPQ.java and UnorderedLinkedListMaxPQ.java
 2.4.4: Yes!
+2.4.13: 2_4_13.java
+2.4.14: 2 for one remove operation
+2.4.15: MinPQ.java
+2.4.16: many -> all elements are different; few -> all are same. The answer is not sure.
+2.4.17: Pending, but the proof is simple.
+2.4.18: Yes.
+2.4.19: MaxPQ.java
