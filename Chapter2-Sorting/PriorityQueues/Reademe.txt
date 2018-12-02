@@ -15,3 +15,4 @@
 2.4.25: Pending
 2.4.26: MaxPQWithoutExch.java
 2.4.27: MaxPQWithoutExch.java
+2.4.28: SelectionFilter.java
