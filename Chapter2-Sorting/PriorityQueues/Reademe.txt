@@ -10,3 +10,7 @@
 2.4.20: https://algs4.cs.princeton.edu/24pq/
 2.4.21: https://stackoverflow.com/questions/4873472/how-to-implement-stack-using-priority-queue
 2.4.22: Already done in OrderedArrayMaxPQ.java and UnorderedArrayMaxPQ.java
+2.4.23：MultiwayMaxPQ.java
+2.4.24: Pending (https://stackoverflow.com/questions/31257243/how-do-i-implement-a-priority-queue-with-explicit-links-using-a-triply-linked-d)
+2.4.25: Pending
+2.4.26: MaxPQWithoutExch.java
