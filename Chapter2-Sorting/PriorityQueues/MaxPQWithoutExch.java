@@ -3,6 +3,7 @@ import java.util.Comparator;
 public class MaxPQWithoutExch<Key extends Comparable<Key>> {
     private Key[] pq;
     private int N = 0;
+    private Key minimum = null;
     
     public MaxPQWithoutExch(int maxN) {
         pq = (Key[]) new Comparable[maxN+1];
@@ -19,13 +20,21 @@ public class MaxPQWithoutExch<Key extends Comparable<Key>> {
     public void insert(Key v) {
         pq[++N] = v;
         swim(N);
+        if (minimum == null || less(v, minimum)) {
+            minimum = v;
+        }
     }
     
     public Key delMax() {
         Key max = pq[1];
         exch(1, N--);
         sink(1);
+        if (isEmpty()) minimum = null;
         return max;
+    }
+    
+    public Key min() {
+        return minimum;
     }
     
     private void swim(int k) {
@@ -61,7 +70,7 @@ public class MaxPQWithoutExch<Key extends Comparable<Key>> {
     
     public static void main(String[] args) {
         int N = 40;
-        MultiwayMaxPQ pq = new MultiwayMaxPQ(N, 3);
+        MaxPQWithoutExch pq = new MaxPQWithoutExch(N);
         StdOut.print("Insert: ");
         for (int i = 0; i < N; i++) {
             Integer rand = StdRandom.uniform(40);
@@ -70,10 +79,14 @@ public class MaxPQWithoutExch<Key extends Comparable<Key>> {
         }
         StdOut.println();
         
+        StdOut.println("Minimum: " + pq.min());
+        
         StdOut.print("DelMax: ");
         while(!pq.isEmpty()) {
             StdOut.print(pq.delMax() + " ");
         }
         StdOut.println();
+        
+        StdOut.println("Minimum: " + pq.min());
     }
 }
