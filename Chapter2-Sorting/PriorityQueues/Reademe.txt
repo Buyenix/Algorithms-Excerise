@@ -14,3 +14,4 @@
 2.4.24: Pending (https://stackoverflow.com/questions/31257243/how-do-i-implement-a-priority-queue-with-explicit-links-using-a-triply-linked-d)
 2.4.25: Pending
 2.4.26: MaxPQWithoutExch.java
+2.4.27: MaxPQWithoutExch.java
