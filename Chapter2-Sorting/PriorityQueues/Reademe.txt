@@ -9,3 +9,4 @@
 2.4.19: MaxPQ.java
 2.4.20: https://algs4.cs.princeton.edu/24pq/
 2.4.21: https://stackoverflow.com/questions/4873472/how-to-implement-stack-using-priority-queue
+2.4.22: Already done in OrderedArrayMaxPQ.java and UnorderedArrayMaxPQ.java
