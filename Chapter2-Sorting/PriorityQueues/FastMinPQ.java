@@ -103,7 +103,7 @@ public class FastMinPQ<Key extends Comparable<Key>> {
     
     public static void main(String[] args) {
         int N = 10;
-        MinPQ pq = new MinPQ(N);
+        FastMinPQ pq = new FastMinPQ(N);
         StdOut.print("Insert: ");
         for (int i = 0; i < N; i++) {
             Integer rand = StdRandom.uniform(1000);
