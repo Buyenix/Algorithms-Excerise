@@ -28,6 +28,10 @@ public class MinPQ<Key extends Comparable<Key>> {
         return min;
     }
     
+    public Key min() {
+        if (size() <= 0) throw new RuntimeException("PQ underflow!");
+        return pq[1];
+    }
     public boolean isMinPQ() {
         return isMinPQ(1);
     }
