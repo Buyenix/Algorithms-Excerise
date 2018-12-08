@@ -16,3 +16,5 @@
 2.4.26: MaxPQWithoutExch.java
 2.4.27: MaxPQWithoutExch.java
 2.4.28: SelectionFilter.java
+2.4.29: MinMaxPQ.java
+2.4.30: MedianPQ.java
