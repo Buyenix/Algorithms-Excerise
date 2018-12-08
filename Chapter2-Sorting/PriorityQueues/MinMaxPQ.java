@@ -1,7 +1,7 @@
 public class MinMaxPQ<Key extends Comparable<Key>>{
-    MaxPQ<Key> max;
-    MinPQ<Key> min;
-    int N;
+    private MaxPQ<Key> max;
+    private MinPQ<Key> min;
+    private int N;
     
     public MinMaxPQ(int maxN) {
         max = new MaxPQ<Key>(maxN);
