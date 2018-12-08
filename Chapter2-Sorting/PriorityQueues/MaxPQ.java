@@ -25,6 +25,11 @@ public class MaxPQ<Key extends Comparable<Key>> {
         }
     }
     
+    public Key max() {
+        if (size() <= 0) throw new RuntimeException("PQ underflow!");
+        return pq[1];
+    }
+    
     public boolean isEmpty() {   
         return N == 0;
     }
@@ -85,7 +90,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
         pq[j] = t;
     }
     
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         int N = 10;
         Integer[] a = new Integer[N];
         StdOut.print("Array: ");
