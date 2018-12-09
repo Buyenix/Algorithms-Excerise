@@ -18,3 +18,5 @@
 2.4.28: SelectionFilter.java
 2.4.29: MinMaxPQ.java
 2.4.30: MedianPQ.java
+2.4.31: FastMinPQ.java
+2.4.33, 2.4.34: IndexMinPQ.java
