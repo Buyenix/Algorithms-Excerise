@@ -7,3 +7,4 @@
 2.5.13: LoadBalance.java
 2.5.14: Domain.java
 2.5.16: California.java
+2.5.17: Stability.java, Selection.java and Pack.java
