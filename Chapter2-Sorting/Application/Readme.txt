@@ -7,4 +7,6 @@
 2.5.13: LoadBalance.java
 2.5.14: Domain.java
 2.5.16: California.java
-2.5.17: Stability.java, Selection.java and Pack.java
+2.5.17, 2.5.18: Stability.java, Selection.java and Pack.java
+2.5.19: Inversions.java, KendallTau.java
+2.5.20~2.5.23: Pending.
