@@ -50,3 +50,5 @@
 3.1.26: pending
 3.1.27: S * log2(N) = N^2 + N * log2(N) --> to get the S value???
 3.1.28: BinarySearchST.java
+2.1.29: pending
+3.1.30: BinarySearchST.java
