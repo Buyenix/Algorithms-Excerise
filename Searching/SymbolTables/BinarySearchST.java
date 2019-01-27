@@ -10,6 +10,16 @@ public class BinarySearchST<Key extends Comparable<Key>, Value>
         vals = (Value[]) new Object[capacity];
     }
     
+    private void resize(int newSize) {
+        Key[] newKeys = (Key[]) new Comparable[newSize];
+        Value[] newVals = (Value[]) new Object[newSize];
+        for (int i = 0; i < N; i++) {
+            newKeys[i] = keys[i];
+            newVals[i] = vals[i];
+        }
+        keys = newKeys;
+        vals = newVals;
+    }
     public int rank(Key key)
     {
         int lo = 0, hi = N-1;
@@ -25,12 +35,19 @@ public class BinarySearchST<Key extends Comparable<Key>, Value>
     
     public int size() { return N; }
     public boolean isEmpty() { return N == 0; }
-    public Key get(Key key)
+    public Value get(Key key)
     {
         if (isEmpty()) return null;
         int i = rank(key);
-        if (i < N && keys[i].compareTo(key) == 0) return keys[i];
+        if (i < N && keys[i].compareTo(key) == 0) return vals[i];
         else                                      return null;
+    }
+    
+    public Value get(int index)
+    {
+        if (isEmpty()) return null;
+        if (index < N) return vals[index];
+        else           return null;
     }
     
     public boolean contains(Key key)
@@ -42,6 +59,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value>
     
     public void put(Key key, Value val)
     {
+        if (N == keys.length) resize(2*N);
         int i = rank(key);
         if (i < N && key.compareTo(keys[i]) == 0 ) {
             vals[i] = val;
@@ -64,6 +82,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value>
                 vals[i] = vals[i+1];
             }
             N--;
+            if (N > 0 && N == keys.length/4) resize(keys.length/2);
         }
         return;
     }
@@ -112,6 +131,15 @@ public class BinarySearchST<Key extends Comparable<Key>, Value>
         }
         if (contains(hi)) {
             q.enqueue(keys[hi_idx]);
+        }
+        return q;
+    }
+    
+    public Iterable<Key> keys()
+    {
+        Queue<Key> q = new Queue<Key>();
+        for (int i = 0; i < N; i++) {
+            q.enqueue(keys[i]);
         }
         return q;
     }
