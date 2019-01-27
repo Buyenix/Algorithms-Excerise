@@ -43,3 +43,4 @@
     For binary search ST (array)
     total: 2*(24 (array overhead size) + 8N (reference to Key or Value)) = 48 + 16N.
     Since the array size is 25% ~ 100%, the actual memory is 48 + 16N ~ 4*(48 + 16N)
+3.1.22: ArrayST.java (see moveToFrontGet())
