@@ -58,6 +58,23 @@ public class ArrayST<Key, Value>
         else           return null;
     }
     
+    public Value moveToFrontGet(Key key) {
+        int idx = index(key);
+        Value val;
+        if (idx != -1) {
+            val = vals[idx];
+            for (int i=idx; i>0; i--) {
+                keys[i] = keys[i-1];
+                vals[i] = vals[i-1];
+            }
+            keys[0] = key;
+            vals[0] = val;
+        } else {
+            val = null;
+        }
+        return val;
+    }
+    
     public void delete(Key key) {
         int idx = index(key);
         int lastIdx = N-1;
