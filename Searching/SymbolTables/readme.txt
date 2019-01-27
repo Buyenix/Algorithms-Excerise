@@ -44,3 +44,6 @@
     total: 2*(24 (array overhead size) + 8N (reference to Key or Value)) = 48 + 16N.
     Since the array size is 25% ~ 100%, the actual memory is 48 + 16N ~ 4*(48 + 16N)
 3.1.22: ArrayST.java (see moveToFrontGet())
+3.1.23: pending
+3.1.24: pending
+3.1.25: SoftwareCachingFrequencyCounter.java. Not confident that this is correct and good enough.
