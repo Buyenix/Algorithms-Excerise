@@ -35,3 +35,11 @@
     So the percentage of insertion is (log2(N) + N)/(1001log2(N) + N)
 3.1.16 ~ 3.1.18: BinarySearchST.java
 3.1.19: use a queue
+3.1.20: pending
+3.1.21: 
+    For sequential ST (linked list):
+    each node: 16 (object overhead)+ 8 (reference to Key) + 8 (reference to Value) + 8 (reference t0 next) + 8 (extra overhead)= 48 byte
+    total: 32 (linked list overhead size) + 48N
+    For binary search ST (array)
+    total: 2*(24 (array overhead size) + 8N (reference to Key or Value)) = 48 + 16N.
+    Since the array size is 25% ~ 100%, the actual memory is 48 + 16N ~ 4*(48 + 16N)
