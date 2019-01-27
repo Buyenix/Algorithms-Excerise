@@ -47,3 +47,6 @@
 3.1.23: pending
 3.1.24: pending
 3.1.25: SoftwareCachingFrequencyCounter.java. Not confident that this is correct and good enough.
+3.1.26: pending
+3.1.27: S * log2(N) = N^2 + N * log2(N) --> to get the S value???
+3.1.28: BinarySearchST.java
