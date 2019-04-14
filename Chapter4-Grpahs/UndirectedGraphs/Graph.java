@@ -26,6 +26,21 @@ public class Graph
         }
     }
     
+    public Graph(In in, String sp)
+    {
+        this(in.readInt());
+        int E = in.readInt();
+        while (in.hasNextLine()) {
+            String[] a = in.readLine().split(sp);
+            if (a.length <= 0) continue;
+            int v = Integer.parseInt(a[0]);
+            for (int i = 1; i < a.length; i++) {
+                int w = Integer.parseInt(a[i]);
+                addEdge(v, w);
+            }
+        }
+    }
+    
     public Graph(Graph G)
     {
         this(G.V());
