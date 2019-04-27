@@ -8,3 +8,7 @@ I am happy with this.
 4.1.13: BreadthFirstPaths.java
 4.1.14: No, the behavior will be same with DFS paths.
 4.1.15: Graph.java
+4.1.16, 4.1.18: GraphProperties.java
+4.1.19, 4.1.20, 4.1.21: skip
+4.1.22: SymbolGraph.java, DegreeOfSeparation.java
+4.1.23~4.1.25: skip
