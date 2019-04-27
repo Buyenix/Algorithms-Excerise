@@ -11,4 +11,4 @@ I am happy with this.
 4.1.16, 4.1.18: GraphProperties.java
 4.1.19, 4.1.20, 4.1.21: skip
 4.1.22: SymbolGraph.java, DegreeOfSeparation.java
-4.1.23~4.1.25: skip
+4.1.23~4.1.26: skip
