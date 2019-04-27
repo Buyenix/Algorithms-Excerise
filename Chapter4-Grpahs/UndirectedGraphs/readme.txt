@@ -14,3 +14,4 @@ I am happy with this.
 4.1.23~4.1.26: skip
 4.1.27: 56 + 40V + 128E (needs to be revisited)
 4.1.32: ParallelEdgeDetection.java
+4.1.34: OnePassSymbolGraph.java. This solution may not be correct!
