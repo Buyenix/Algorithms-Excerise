@@ -1,5 +1,6 @@
 public class PrimMSTForest
 {
+    private static final double FLOATING_POINT_EPSILON = 1E-12;
     private boolean[] marked;
     private Edge[] edgeTo;
     private double[] disTo;
@@ -63,5 +64,65 @@ public class PrimMSTForest
         for (Edge e : edges())
             weight += e.weight();
         return weight;
+    }
+    
+    public boolean check(EdgeWeightedGraph G)
+    {
+        //1. check weight
+        double weight = 0.0;
+        for (Edge e : edges()) {
+            weight += e.weight();
+        }
+        if (Math.abs(weight - weight()) > FLOATING_POINT_EPSILON) {
+            StdOut.printf("Graph weight %f doesn't equal weight() %f\n", weight, weight());
+            return false;
+        }
+        
+        //2. check mst is acyclic
+        UF uf = new UF(G.V());
+        for (Edge e : edges()) {
+            int v = e.either();
+            int w = e.other(v);
+            if (uf.connected(v, w)) {
+                StdOut.printf("MST has a cycle for edge: %s\n", e);
+                return false;
+            } else {
+                uf.union(v, w);
+            }
+        }
+        
+        //3. check mst is a spanning tree or not
+        for (Edge e : G.edges()) {
+            int v = e.either();
+            int w = e.other(v);
+            if (!uf.connected(v, w)) {
+                StdOut.printf("%d-%d is not connected in MST\n", v, w);
+                return false;
+            }
+        }
+        
+        //4. Check the cut property for minimum spanning tree
+        for (Edge e : edges()) {
+            UF uf2 = new UF(G.V());
+            
+            for (Edge ee : edges()) {
+                if (ee != e) {
+                    int v = ee.either();
+                    int w = ee.other(v);
+                    uf2.union(v, w);
+                }
+            }
+            
+            for (Edge eee : G.edges()) {
+                int x = eee.either();
+                int y = eee.other(x);
+                if (uf2.connected(x, y)) continue;
+                if (eee.weight() < e.weight()) {
+                    StdOut.printf("Edge %s is not the minimum edge for cut property.\n", e);
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
