@@ -36,7 +36,7 @@ public class AcyclicLP
     }
     
     public boolean hasPathTo(int v) {
-        return disTo[v] < Double.POSITIVE_INFINITY;
+        return disTo[v] > Double.NEGATIVE_INFINITY;
     }
     
     public Iterable<DirectedEdge> pathTo(int v) {
